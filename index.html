@@ -196,7 +196,7 @@ border-radius: 50%;
 				
 			</div>
 			<div class="col-md-3 ser-grid">
-				<img src="images/java.png" height="190px" width="140px">
+				<img src="images/android.png" height="190px" width="140px">
 				<h3>Android</h3>
 				<p>Java is intended to let application developers "write once, run anywhere" meaning that compiled Java code can run on all platforms that support Java without the need for recompilation.</p>
 				
@@ -221,6 +221,10 @@ border-radius: 50%;
 					<div class="col-md-2 col-md-offset-1 skills-grid text-center">
 						<div class="circle" id="circles-3"></div>
 						<p>Java</p>
+					</div>
+					<div class="col-md-2 col-md-offset-1 skills-grid text-center">
+						<div class="circle" id="circles-3"></div>
+						<p>Android</p>
 					</div>
 					<div class="clearfix"> </div>
 				 <script type="text/javascript" src="js/circles.js"></script>
@@ -259,6 +263,20 @@ border-radius: 50%;
 								for (var i = 3; i <= 3; i++){
 									var child = document.getElementById('circles-' + i),
 										percentage = 90;
+										
+									Circles.create({
+										id:         child.id,
+										percentage: percentage,
+										radius:     80,
+										width:      10,
+										number:   percentage / 1,
+										text:       '%',
+										colors:     colors[i - 1]
+									});
+								}
+							 	for (var i = 4; i <= 4; i++){
+									var child = document.getElementById('circles-' + i),
+										percentage = 70;
 										
 									Circles.create({
 										id:         child.id,
